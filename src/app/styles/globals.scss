@@ -1,0 +1,56 @@
+$word-length: 9;
+
+* {
+  background-color: black;
+}
+.container {
+  position: fixed;
+  inset: 0px;
+  width: 50rem;
+  height: 5rem;
+  max-width: 100vw;
+  max-height: 100dvh;
+  margin: auto;
+}
+.typing-text-container {
+  .text {
+    position: relative;
+    color: #4070f4;
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: left;
+
+    &.first-text {
+      color: #fff;
+    }
+
+    &.second-text:before {
+      content: "";
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: black;
+      border-left: 3px solid #4070f4;
+      animation: typing 6s infinite, cursor 0.4s step-end infinite alternate;
+    }
+  }
+}
+
+@keyframes typing {
+  40%,
+  60% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
