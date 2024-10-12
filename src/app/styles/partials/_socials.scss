@@ -1,0 +1,18 @@
+.socials-container {
+  margin-top: 3rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.socials {
+  transition: transform 0.2s, fill 0.2s;
+}
+
+.socials:hover {
+  transform: scale(1.1);
+  fill: #c3073f;
+}
+
+.socials:active {
+  transform: scale(1);
+}

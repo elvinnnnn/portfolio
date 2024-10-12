@@ -1,26 +1,28 @@
+import Link from "next/link";
+
 export default function Nav() {
   return (
-    <nav className="nav">
+    <nav className="nav-container">
       <ul>
         <li>
-          <a href="/" className="nav-button home">
-            home
-          </a>
+          <Link href="/?section=about" className="nav-button about">
+            about
+          </Link>
         </li>
         <li>
-          <a href="/" className="nav-button experience">
+          <Link href="/?section=experience" className="nav-button experience">
             experience
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/" className="nav-button projects">
+          <Link href="/?section=projects" className="nav-button projects">
             projects
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/" className="nav-button contact">
+          <Link href="/?section=contact" className="nav-button contact">
             contact
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>

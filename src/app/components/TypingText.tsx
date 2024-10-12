@@ -20,17 +20,17 @@ export default function TypingText() {
             onInit={(typewriter) => {
               typewriter
                 .typeString(
-                  '<span style="color: #4070f4; font-size: 3rem; font-weight: 600;">developer.</span>'
+                  '<span style="color: #c3073f; font-size: 3rem; font-weight: 600;">developer.</span>'
                 )
                 .pauseFor(2500)
                 .deleteAll()
                 .typeString(
-                  '<span style="color: #4070f4; font-size: 3rem; font-weight: 600;">artist.</span>'
+                  '<span style="color: #c3073f; font-size: 3rem; font-weight: 600;">artist.</span>'
                 )
                 .pauseFor(2500)
                 .deleteAll()
                 .typeString(
-                  '<span style="color: #4070f4; font-size: 3rem; font-weight: 600;">musician.</span>'
+                  '<span style="color: #c3073f; font-size: 3rem; font-weight: 600;">musician.</span>'
                 )
                 .pauseFor(2500)
                 .deleteAll()

@@ -1,0 +1,36 @@
+.typing-text-container {
+  .text {
+    position: relative;
+    color: #c3073f;
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: left;
+
+    &.first-text {
+      color: #fff;
+    }
+  }
+}
+
+.typewriter-container {
+  display: flex;
+  .typewriter {
+    margin-left: 12px;
+  }
+  .cursor-text {
+    color: #c3073f;
+    font-size: 3rem;
+    font-weight: 600;
+    animation: cursor 1s linear infinite;
+  }
+}
+
+@keyframes cursor {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
