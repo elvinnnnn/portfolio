@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./styles/globals.scss";
 import { M_PLUS_Rounded_1c } from "next/font/google";
 
-const roboto = M_PLUS_Rounded_1c({
+const mplus = M_PLUS_Rounded_1c({
   weight: "300",
   subsets: ["latin"],
 });
@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={roboto.className}>{children}</body>
+      <body className={mplus.className}>{children}</body>
     </html>
   );
 }

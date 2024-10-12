@@ -1,6 +1,6 @@
 .nav-container {
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 2rem;
   ul {
     li {
       position: relative;
@@ -16,28 +16,27 @@
 .nav-button {
   padding-left: 0.6rem;
   transition: padding-left 0.3s ease, color 0.3s ease;
-}
-
-.nav-button::after {
-  content: "/";
-  position: absolute;
-  left: 0;
-  transition: left 0.3s ease;
+  &::after {
+    content: "/";
+    position: absolute;
+    left: 0;
+    transition: left 0.3s ease;
+  }
 }
 
 .nav-button:hover {
   padding-left: 0rem;
   color: #c3073f;
 }
-.nav-button.about:hover::after {
-  left: 4rem;
-}
-.nav-button.experience:hover::after {
-  left: 7.3rem;
-}
-.nav-button.projects:hover::after {
-  left: 5.8rem;
-}
-.nav-button.contact:hover::after {
+.nav-button.about-link:hover::after {
   left: 5.3rem;
+}
+.nav-button.experience-link:hover::after {
+  left: 9.7rem;
+}
+.nav-button.projects-link:hover::after {
+  left: 7.6rem;
+}
+.nav-button.contact-link:hover::after {
+  left: 7rem;
 }

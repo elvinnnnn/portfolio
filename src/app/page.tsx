@@ -25,7 +25,7 @@ export default function Home() {
       case "contact":
         return <Contact />;
       default:
-        return <Home />;
+        return <About />;
     }
   };
   return (

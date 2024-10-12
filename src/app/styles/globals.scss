@@ -1,12 +1,13 @@
-@import "./partials/_socials.scss";
-@import "./partials/_nav.scss";
-@import "./partials/_title.scss";
+@import "./partials/socials";
+@import "./partials/nav";
+@import "./partials/title";
+@import "./partials/pages";
 
 * {
   background-color: #1a1a1d;
 }
 body {
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 .container {
@@ -14,21 +15,29 @@ body {
   height: 100vh;
 }
 .left-half {
-  flex: 0.4;
+  flex: 1;
   .hub-container {
     flex: 1;
     position: absolute;
-    top: 28%;
-    left: 10%;
+    top: 23%;
+    left: 8%;
     user-select: none;
   }
 }
 .right-half {
+  padding: 14rem 10rem;
   color: #fff;
-  flex: 0.6;
+  flex: 1;
   .content-container {
     flex: 1;
   }
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer {
@@ -41,7 +50,7 @@ body {
 }
 
 // Fade in animations
-@keyframes fadein {
+@keyframes fade-in-from-left {
   0% {
     opacity: 0;
     transform: translateX(-30rem);
@@ -57,14 +66,38 @@ body {
 .socials-container {
   opacity: 0; /* Ensure initial opacity is set */
   transform: translateX(-30rem); /* Ensure initial transform is set */
-  animation: fadein 0.8s ease-in-out forwards;
+  animation: fade-in-from-left 0.8s ease-in-out forwards;
 }
 .typing-text-container {
-  animation-delay: 400ms;
+  animation-delay: 250ms;
 }
 .nav-container {
-  animation-delay: 550ms;
+  animation-delay: 300ms;
 }
 .socials-container {
-  animation-delay: 700ms;
+  animation-delay: 450ms;
+}
+
+// Fade in animations
+@keyframes fade-in-from-right {
+  0% {
+    opacity: 0;
+    transform: translateX(30rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.page-content,
+.about-container {
+  opacity: 0; /* Ensure initial opacity is set */
+  transform: translateX(30rem); /* Ensure initial transform is set */
+  animation: fade-in-from-right 0.8s ease-in-out forwards;
+}
+.about-container {
+  animation-delay: 50ms;
+}
+.page-content {
+  animation-delay: 200ms;
 }

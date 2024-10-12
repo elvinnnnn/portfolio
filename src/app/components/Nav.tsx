@@ -5,22 +5,25 @@ export default function Nav() {
     <nav className="nav-container">
       <ul>
         <li>
-          <Link href="/?section=about" className="nav-button about">
+          <Link href="/?section=about" className="nav-button about-link">
             about
           </Link>
         </li>
         <li>
-          <Link href="/?section=experience" className="nav-button experience">
+          <Link
+            href="/?section=experience"
+            className="nav-button experience-link"
+          >
             experience
           </Link>
         </li>
         <li>
-          <Link href="/?section=projects" className="nav-button projects">
+          <Link href="/?section=projects" className="nav-button projects-link">
             projects
           </Link>
         </li>
         <li>
-          <Link href="/?section=contact" className="nav-button contact">
+          <Link href="/?section=contact" className="nav-button contact-link">
             contact
           </Link>
         </li>
