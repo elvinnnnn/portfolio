@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import "./styles/globals.scss";
-import { Roboto_Mono } from "next/font/google";
+import { M_PLUS_Rounded_1c } from "next/font/google";
 
-const roboto = Roboto_Mono({
-  weight: "400",
+const roboto = M_PLUS_Rounded_1c({
+  weight: "300",
   subsets: ["latin"],
 });
 

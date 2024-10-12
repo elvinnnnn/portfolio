@@ -1,35 +1,45 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React from "react";
+import Typewriter from "typewriter-effect";
 
 export default function TypingText() {
-  const [text, setText] = useState("Developer");
-
-  useEffect(() => {
-    const textCycle = () => {
-      setTimeout(() => {
-        setText("Developer");
-      }, 0);
-      setTimeout(() => {
-        setText("Artist");
-      }, 6000);
-      setTimeout(() => {
-        setText("Musician");
-      }, 12000);
-    };
-
-    textCycle();
-    const interval = setInterval(textCycle, 18000);
-
-    return () => clearInterval(interval); // Cleanup interval on component unmount
-  }, []);
   return (
     <div className="typing-text-container">
       <div>
         <span className="text first-text">Hi! I&apos;m Elvin,</span>
       </div>
-      <div>
-        <span className="text first-text"> an aspiring </span>
-        <span className="text second-text">{text}</span>
+      <div className="typewriter-container">
+        <div className="text first-text"> an aspiring </div>
+        <div className="typewriter">
+          <Typewriter
+            options={{
+              autoStart: true,
+              loop: true,
+              cursor: "",
+            }}
+            onInit={(typewriter) => {
+              typewriter
+                .typeString(
+                  '<span style="color: #4070f4; font-size: 3rem; font-weight: 600;">Developer</span>'
+                )
+                .pauseFor(2500)
+                .deleteAll()
+                .typeString(
+                  '<span style="color: #4070f4; font-size: 3rem; font-weight: 600;">Artist</span>'
+                )
+                .pauseFor(2500)
+                .deleteAll()
+                .typeString(
+                  '<span style="color: #4070f4; font-size: 3rem; font-weight: 600;">Musician</span>'
+                )
+                .pauseFor(2500)
+                .deleteAll()
+                .start();
+            }}
+          />
+        </div>
+
+        <span className="cursor-text">|</span>
       </div>
     </div>
   );
