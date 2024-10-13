@@ -3,10 +3,11 @@ export default function Projects() {
     <div className="about-container">
       <div className="page-title">my projects.&nbsp;</div>
       <div className="page-content">
-        <div>AInterview</div>
-        <div>FinConnect</div>
-        <div>Introvert In IKEA</div>
-        <div>Songdle</div>
+        <div className="page-child">WORK IN PROGRESS...</div>
+        <div className="page-child">AInterview</div>
+        <div className="page-child">FinConnect</div>
+        <div className="page-child">Introvert In IKEA</div>
+        <div className="page-child">Songdle</div>
       </div>
     </div>
   );

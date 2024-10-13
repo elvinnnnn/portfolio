@@ -3,9 +3,10 @@ export default function Experience() {
     <div className="about-container">
       <div className="page-title">my experience.&nbsp;</div>
       <div className="page-content">
-        <div>Technical Support - TSA</div>
-        <div>GitHub Contributer</div>
-        <div>Community Work</div>
+        <div className="page-child">WORK IN PROGRESS...</div>
+        <div className="page-child">Technical Support - TSA</div>
+        <div className="page-child">GitHub Contributer</div>
+        <div className="page-child">Community Work</div>
       </div>
     </div>
   );

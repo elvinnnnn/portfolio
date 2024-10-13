@@ -2,30 +2,71 @@
 @import "./partials/nav";
 @import "./partials/title";
 @import "./partials/pages";
+@import "./partials/setup";
 
-* {
-  background-color: #1a1a1d;
+.highlight {
+  text-decoration: none;
+  font-weight: 400;
+  color: #c3073f;
 }
-body {
-  overflow: hidden;
+
+.highlight:hover {
+  font-weight: 600;
+}
+
+.email-form {
+  display: grid;
+  grid-template-rows: 10% 10% 80%;
+  gap: 2rem;
+  position: relative;
+
+  input,
+  textarea {
+    color: #fff;
+    border: 0.1rem solid #4e4e50;
+    margin: 0rem 1rem;
+    border-radius: 0.3rem;
+    padding-left: 0.5rem;
+    font-size: 1.5rem;
+    font-family: inherit;
+  }
+
+  input {
+    height: 2.1rem;
+  }
+
+  textarea {
+    resize: none;
+    padding-bottom: 1rem;
+    max-height: 7.5rem;
+  }
+  .submit-button {
+    position: absolute;
+    bottom: -22%;
+    right: 0%;
+  }
 }
 
 .container {
   display: flex;
+  flex-direction: row;
   height: 100vh;
 }
+
 .left-half {
+  align-items: center;
+  display: flex;
+  padding: 0rem 0rem 0rem 10rem;
   flex: 1;
   .hub-container {
     flex: 1;
-    position: absolute;
-    top: 23%;
-    left: 8%;
     user-select: none;
   }
 }
 .right-half {
-  padding: 14rem 10rem;
+  align-items: center;
+  display: flex;
+  padding: 0rem 10rem 0rem 0rem;
   color: #fff;
   flex: 1;
   .content-container {
@@ -47,6 +88,9 @@ body {
   width: 100%;
   color: #4e4e50;
   text-align: center;
+  margin-bottom: 0.5rem;
+  opacity: 0;
+  animation: fade-in 1s ease-in forwards;
 }
 
 // Fade in animations
@@ -79,6 +123,14 @@ body {
 }
 
 // Fade in animations
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes fade-in-from-right {
   0% {
     opacity: 0;
@@ -89,15 +141,133 @@ body {
     transform: translateX(0);
   }
 }
-.page-content,
-.about-container {
+.page-child:nth-child(1),
+.page-child:nth-child(2),
+.page-child:nth-child(3),
+.page-child:nth-child(4),
+.page-child:nth-child(5),
+.page-title {
   opacity: 0; /* Ensure initial opacity is set */
   transform: translateX(30rem); /* Ensure initial transform is set */
   animation: fade-in-from-right 0.8s ease-in-out forwards;
 }
-.about-container {
+.page-title {
   animation-delay: 50ms;
 }
-.page-content {
-  animation-delay: 200ms;
+.page-child:nth-child(1) {
+  animation-delay: 150ms;
+}
+.page-child:nth-child(2) {
+  animation-delay: 250ms;
+}
+.page-child:nth-child(3) {
+  animation-delay: 350ms;
+}
+.page-child:nth-child(4) {
+  animation-delay: 450ms;
+}
+.page-child:nth-child(5) {
+  animation-delay: 550ms;
+}
+@media (max-width: 1700px) {
+  .left-half {
+    padding: 0rem 0rem 0rem 5rem;
+  }
+  .right-half {
+    padding: 0rem 5rem 0rem 0rem;
+  }
+  .an {
+    display: none;
+  }
+}
+
+@media (max-width: 1470px) {
+  .left-half {
+    padding: 0rem 0rem 0rem 1rem;
+  }
+  .right-half {
+    padding: 0rem 1rem 0rem 0rem;
+  }
+  .an {
+    display: none;
+  }
+}
+
+@media (max-width: 1360px) {
+  .container {
+    flex-direction: column;
+  }
+  .footer {
+    position: relative;
+    bottom: auto;
+    margin-top: 2rem;
+  }
+  .left-half {
+    padding: 0rem 10rem 0rem 10rem;
+  }
+  .right-half {
+    padding: 2rem 10rem 0rem 10rem;
+  }
+}
+@media (max-width: 1360px) {
+  .container {
+    flex-direction: column;
+  }
+  .footer {
+    position: relative;
+    bottom: auto;
+    margin-top: 2rem;
+  }
+  .left-half {
+    padding: 0rem 5rem 0rem 5rem;
+  }
+  .right-half {
+    padding: 2rem 5rem 0rem 5rem;
+  }
+}
+
+@media (max-width: 1360px) {
+  .container {
+    flex-direction: column;
+  }
+  .footer {
+    position: relative;
+    bottom: auto;
+    margin-top: 2rem;
+  }
+  .left-half {
+    padding: 0rem 1rem 0rem 1rem;
+  }
+  .right-half {
+    padding: 2rem 1rem 0rem 1rem;
+  }
+}
+
+@media (max-width: 670px) {
+  .title {
+    font-size: 2rem;
+  }
+  .typewriter-container {
+    display: none;
+  }
+  .profile-pic {
+    display: none;
+  }
+  .my-name {
+    color: #c3073f;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .footer {
+    position: relative;
+    bottom: auto;
+    margin-top: 2rem;
+  }
+  .left-half {
+    padding: 0rem;
+  }
+  .right-half {
+    padding-top: 2rem;
+  }
 }

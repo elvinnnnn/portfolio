@@ -8,6 +8,7 @@
   color: #c3073f;
   font-size: 2rem;
   position: relative;
+  overflow: hidden;
 
   &::after {
     content: "";
@@ -18,5 +19,46 @@
     opacity: 0.7;
     bottom: 42%;
     border-radius: 2000px;
+  }
+}
+
+.number-contact {
+  margin-top: 2rem;
+  margin-right: 4rem;
+  z-index: -5;
+}
+
+.plane-icon {
+  animation: popout 0.8s ease-out forwards;
+  animation-delay: 1.3s;
+  transform: scale(0);
+}
+
+.bio-container {
+  display: flex;
+}
+
+.hobby-container {
+  margin-top: 1rem;
+}
+
+.profile-pic {
+  margin-top: -1rem;
+  margin-left: 1rem;
+}
+
+.spotify-container {
+  display: flex;
+}
+
+@keyframes popout {
+  0% {
+    transform: scale(0) rotate(-30deg);
+  }
+  50% {
+    transform: scale(1.05) rotate(5deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
   }
 }

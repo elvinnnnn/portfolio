@@ -8,12 +8,13 @@ import {
   Experience,
   Contact,
   Projects,
+  Footer,
 } from "./components";
 import { useSearchParams } from "next/navigation";
 
 export default function Home() {
   const searchParams = useSearchParams();
-  const section = searchParams.get("section");
+  const section = searchParams.get("");
   const renderContent = () => {
     switch (section) {
       case "about":
@@ -38,7 +39,7 @@ export default function Home() {
         </div>
       </div>
       <div className="right-half">{renderContent()}</div>
-      <div className="footer">By Elvin Lee 2024. All rights reserved ©.</div>
+      <Footer />
     </div>
   );
 }
