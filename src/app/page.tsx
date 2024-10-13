@@ -19,48 +19,28 @@ export default function Home() {
   const renderContent = () => {
     switch (section) {
       case "about":
-        return (
-          <Suspense>
-            <About />
-          </Suspense>
-        );
+        return <About />;
       case "experience":
-        return (
-          <Suspense>
-            <Experience />
-          </Suspense>
-        );
+        return <Experience />;
       case "projects":
-        return (
-          <Suspense>
-            <Projects />
-          </Suspense>
-        );
+        return <Projects />;
       case "contact":
-        return (
-          <Suspense>
-            <Contact />
-          </Suspense>
-        );
+        return <Contact />;
       default:
-        return (
-          <Suspense>
-            <About />
-          </Suspense>
-        );
+        return <About />;
     }
   };
   return (
-    <div className={`${styles.page} container`}>
-      <div className="left-half">
-        <div className="hub-container">
-          <TypingText />
-          <Nav />
-          <Socials />
+    <Suspense fallback={<div>Loading...</div>}>
+      <div className={`${styles.page} container`}>
+        <div className="left-half">
+          <div className="hub-container">
+            <TypingText />
+            <Nav />
+          </div>
         </div>
+        <div className="right-half">{renderContent()}</div>
       </div>
-      <div className="right-half">{renderContent()}</div>
-      <Footer />
-    </div>
+    </Suspense>
   );
 }
