@@ -5,6 +5,8 @@ import { M_PLUS_Rounded_1c } from "next/font/google";
 const mplus = M_PLUS_Rounded_1c({
   weight: "300",
   subsets: ["latin"],
+  display: "swap",
+  adjustFontFallback: false,
 });
 
 export const metadata: Metadata = {

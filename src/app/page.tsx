@@ -11,6 +11,7 @@ import {
   Footer,
 } from "./components";
 import { useSearchParams } from "next/navigation";
+import { Suspense } from "react";
 
 export default function Home() {
   const searchParams = useSearchParams();
@@ -30,16 +31,18 @@ export default function Home() {
     }
   };
   return (
-    <div className={`${styles.page} container`}>
-      <div className="left-half">
-        <div className="hub-container">
-          <TypingText />
-          <Nav />
-          <Socials />
+    <Suspense>
+      <div className={`${styles.page} container`}>
+        <div className="left-half">
+          <div className="hub-container">
+            <TypingText />
+            <Nav />
+            <Socials />
+          </div>
         </div>
+        <div className="right-half">{renderContent()}</div>
+        <Footer />
       </div>
-      <div className="right-half">{renderContent()}</div>
-      <Footer />
-    </div>
+    </Suspense>
   );
 }
