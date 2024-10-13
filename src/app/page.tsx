@@ -11,13 +11,14 @@ import {
   Footer,
 } from "./components";
 import { useSearchParams } from "next/navigation";
-import { Suspense } from "react";
 
 export default function Home() {
   const searchParams = useSearchParams();
   const section = searchParams.get("");
   const renderContent = () => {
     switch (section) {
+      case "/":
+        return <About />;
       case "about":
         return <About />;
       case "experience":
@@ -31,16 +32,16 @@ export default function Home() {
     }
   };
   return (
-    <Suspense fallback={<div>Loading...</div>}>
-      <div className={`${styles.page} container`}>
-        <div className="left-half">
-          <div className="hub-container">
-            <TypingText />
-            <Nav />
-          </div>
+    <div className={`${styles.page} container`}>
+      <div className="left-half">
+        <div className="hub-container">
+          <TypingText />
+          <Nav />
+          <Socials />
         </div>
-        <div className="right-half">{renderContent()}</div>
       </div>
-    </Suspense>
+      <div className="right-half">{renderContent()}</div>
+      <Footer />
+    </div>
   );
 }
