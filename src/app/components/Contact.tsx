@@ -1,6 +1,8 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-
+const EMAIL_ID = process.env.NEXT_PUBLIC_EMAIL_ID;
+const TEMPLATE_ID = process.env.NEXT_PUBLIC_TEMPLATE_ID;
+const EMAIL_API_KEY = process.env.NEXT_PUBLIC_EMAIL_API_KEY;
 export default function Contact() {
   const form = useRef<HTMLFormElement | null>(null);
 
@@ -8,11 +10,11 @@ export default function Contact() {
     e.preventDefault();
     try {
       const response = await emailjs.sendForm(
-        "service_k8g4wxp",
-        "template_lmudgt5",
+        EMAIL_ID ?? "",
+        TEMPLATE_ID ?? "",
         form.current!,
         {
-          publicKey: "IAf9ASugefBf07Gqk",
+          publicKey: EMAIL_API_KEY,
         }
       );
       console.log("SUCCESS!", response.text);
