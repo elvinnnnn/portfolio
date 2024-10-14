@@ -5,21 +5,30 @@
 }
 
 .page-title {
-  color: #c3073f;
+  color: #e64833;
   font-size: 2rem;
   position: relative;
   overflow: hidden;
+  font-weight: 600;
 
   &::after {
     content: "";
     position: absolute;
     height: 0.1rem;
     width: 100%;
-    background: #c3073f;
+    background: #e64833;
     opacity: 0.7;
     bottom: 42%;
     border-radius: 2000px;
   }
+}
+
+.profile-pic {
+  border-radius: 10px;
+  border-width: 0.2rem;
+  border-color: #fbe9d0;
+  border-style: solid;
+  opacity: 0;
 }
 
 .number-contact {
@@ -28,10 +37,17 @@
   z-index: -5;
 }
 
-.plane-icon {
-  animation: popout 0.8s ease-out forwards;
+.pop-in {
+  animation: popin 0.8s ease-out forwards;
   animation-delay: 1.3s;
   transform: scale(0);
+  &.sent-text {
+    animation-delay: 0s;
+  }
+}
+
+.fade-in {
+  animation: fadein 1.2s ease-in forwards 0.5s;
 }
 
 .bio-container {
@@ -51,7 +67,7 @@
   display: flex;
 }
 
-@keyframes popout {
+@keyframes popin {
   0% {
     transform: scale(0) rotate(-30deg);
   }
@@ -60,5 +76,26 @@
   }
   100% {
     transform: scale(1) rotate(0deg);
+  }
+}
+
+@keyframes popout {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.05) rotate(5deg);
+  }
+  100% {
+    transform: scale(0) rotate(-30deg);
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

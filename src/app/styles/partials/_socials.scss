@@ -6,11 +6,12 @@
 
 .socials {
   transition: transform 0.2s, fill 0.2s;
+  fill: #fbe9d0;
 }
 
 .socials:hover {
   transform: scale(1.1);
-  fill: #c3073f;
+  fill: #e64833;
 }
 
 .socials:active {

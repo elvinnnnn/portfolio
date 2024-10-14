@@ -1,13 +1,12 @@
 .typing-text-container {
   .text {
     position: relative;
-    color: #c3073f;
+    color: #e64833;
     font-size: 4rem;
-    font-weight: 600;
+    font-weight: 800;
     text-align: left;
-
     &.first-text {
-      color: #fff;
+      color: #fbe9d0;
     }
   }
 }
@@ -15,13 +14,17 @@
 .typewriter-container {
   display: flex;
   .typewriter {
-    margin-left: 16px;
+    margin-left: 8px;
   }
   .cursor-text {
-    color: #c3073f;
-    font-size: 4rem;
+    color: #e64833;
+    font-size: 1.8rem;
     font-weight: 600;
     animation: cursor 1s linear infinite;
+  }
+
+  .text {
+    font-size: 1.8rem;
   }
 }
 
@@ -32,5 +35,52 @@
   }
   50% {
     opacity: 0;
+  }
+}
+
+$steps: 50;
+.text.first-text.description {
+  font-size: 2.5rem;
+  color: #afcdac;
+  padding-left: 1rem;
+  animation: glitch 6s infinite steps($steps);
+  display: inline-block;
+}
+.my-name {
+  color: #e64833;
+}
+@keyframes glitch {
+  @for $i from 1 to $steps {
+    $per: 100% / $steps * $i;
+    // Define the number of repetitions for each value
+    $weight_repeats: 24;
+    $style_repeats: 24;
+    $decor_repeats: 23;
+
+    $weight: (300, 700);
+    $style: (italic);
+    $decor: (line-through, underline);
+
+    @for $i from 1 through $weight_repeats {
+      $weight: append($weight, 400);
+    }
+
+    @for $i from 1 through $style_repeats {
+      $style: append($style, normal);
+    }
+
+    @for $i from 1 through $decor_repeats {
+      $decor: append($decor, none);
+    }
+
+    $arrayW: random(25);
+    $arrayS: random(25);
+    $arrayD: random(25);
+
+    #{$per} {
+      font-weight: nth($weight, $arrayW);
+      font-style: nth($style, $arrayS);
+      text-decoration: nth($decor, $arrayD);
+    }
   }
 }

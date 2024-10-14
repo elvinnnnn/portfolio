@@ -1,5 +1,5 @@
 .nav-container {
-  color: #fff;
+  color: #afcdac;
   font-size: 2rem;
   ul {
     li {
@@ -14,7 +14,7 @@
   }
 }
 .nav-button {
-  padding-left: 0.6rem;
+  padding-left: 0.7rem;
   transition: padding-left 0.3s ease, color 0.3s ease;
   &::after {
     content: "/";
@@ -26,7 +26,7 @@
 
 .nav-button:hover {
   padding-left: 0rem;
-  color: #c3073f;
+  color: #e64833;
 }
 .nav-button.about-link:hover::after {
   left: 5.3rem;

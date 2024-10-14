@@ -7,7 +7,7 @@
 .highlight {
   text-decoration: none;
   font-weight: 400;
-  color: #c3073f;
+  color: #90aead;
 }
 
 .highlight:hover {
@@ -22,7 +22,7 @@
 
   input,
   textarea {
-    color: #fff;
+    color: #fbe9d0;
     border: 0.1rem solid #4e4e50;
     margin: 0rem 1rem;
     border-radius: 0.3rem;
@@ -67,7 +67,7 @@
   align-items: center;
   display: flex;
   padding: 0rem 10rem 0rem 0rem;
-  color: #fff;
+  color: #fbe9d0;
   flex: 1;
   .content-container {
     flex: 1;
@@ -86,14 +86,14 @@
   bottom: 0;
   font-size: 0.8rem;
   width: 100%;
-  color: #4e4e50;
+  color: #90aead;
   text-align: center;
   margin-bottom: 0.5rem;
   opacity: 0;
   animation: fade-in 1s ease-in forwards;
 }
 
-// Fade in animations
+// fade in animations
 @keyframes fade-in-from-left {
   0% {
     opacity: 0;
@@ -108,8 +108,8 @@
 .typewrite-container,
 .nav-container,
 .socials-container {
-  opacity: 0; /* Ensure initial opacity is set */
-  transform: translateX(-30rem); /* Ensure initial transform is set */
+  opacity: 0;
+  transform: translateX(-30rem);
   animation: fade-in-from-left 0.8s ease-in-out forwards;
 }
 .typing-text-container {
@@ -122,7 +122,6 @@
   animation-delay: 450ms;
 }
 
-// Fade in animations
 @keyframes fade-in {
   0% {
     opacity: 0;
@@ -147,8 +146,8 @@
 .page-child:nth-child(4),
 .page-child:nth-child(5),
 .page-title {
-  opacity: 0; /* Ensure initial opacity is set */
-  transform: translateX(30rem); /* Ensure initial transform is set */
+  opacity: 0;
+  transform: translateX(30rem);
   animation: fade-in-from-right 0.8s ease-in-out forwards;
 }
 .page-title {
@@ -169,6 +168,8 @@
 .page-child:nth-child(5) {
   animation-delay: 550ms;
 }
+
+// viewport handlers
 @media (max-width: 1700px) {
   .left-half {
     padding: 0rem 0rem 0rem 5rem;
@@ -247,14 +248,19 @@
   .title {
     font-size: 2rem;
   }
-  .typewriter-container {
-    display: none;
+  .socials-container {
+    justify-content: space-evenly;
+  }
+  .bio-container {
+    flex-direction: column-reverse;
   }
   .profile-pic {
-    display: none;
+    margin: auto;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
   }
   .my-name {
-    color: #c3073f;
+    color: #e64833;
   }
   .container {
     flex-direction: column;

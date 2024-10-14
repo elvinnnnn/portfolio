@@ -22,8 +22,8 @@ export default function About() {
             look around! 😊
           </div>
           <Image
-            className="profile-pic"
-            src="/profile-pic.png"
+            className="profile-pic fade-in"
+            src="/profile-pic.jpg"
             alt="profile"
             width={250}
             height={250}
@@ -34,8 +34,8 @@ export default function About() {
           and exercise! I am currently learning to draw and produce music.
         </div>
         <div className="page-child spotify-container">
-          <div className="currently-listening">track</div>
-          <div className="favourite-music">track track track track</div>
+          <div className="currently-listening">track:</div>
+          <div className="favourite-music"></div>
         </div>
       </div>
     </div>
