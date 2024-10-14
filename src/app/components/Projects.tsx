@@ -1,6 +1,6 @@
 export default function Projects() {
   return (
-    <div className="about-container">
+    <div className="page-container">
       <div className="page-title">my projects.&nbsp;</div>
       <div className="page-content">
         <div className="page-child">WORK IN PROGRESS...</div>

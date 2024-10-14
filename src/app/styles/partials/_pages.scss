@@ -1,3 +1,7 @@
+.page-container {
+  min-height: 60vh;
+  min-width: 60vh;
+}
 .page-content {
   font-size: 1.5rem;
   padding-left: 1rem;
@@ -23,20 +27,6 @@
   }
 }
 
-.profile-pic {
-  border-radius: 10px;
-  border-width: 0.2rem;
-  border-color: #fbe9d0;
-  border-style: solid;
-  opacity: 0;
-}
-
-.number-contact {
-  margin-top: 2rem;
-  margin-right: 4rem;
-  z-index: -5;
-}
-
 .pop-in {
   animation: popin 0.8s ease-out forwards;
   animation-delay: 1.3s;
@@ -48,23 +38,6 @@
 
 .fade-in {
   animation: fadein 1.2s ease-in forwards 0.5s;
-}
-
-.bio-container {
-  display: flex;
-}
-
-.hobby-container {
-  margin-top: 1rem;
-}
-
-.profile-pic {
-  margin-top: -1rem;
-  margin-left: 1rem;
-}
-
-.spotify-container {
-  display: flex;
 }
 
 @keyframes popin {

@@ -30,7 +30,7 @@ export default function Contact() {
     }
   };
   return (
-    <div className="about-container">
+    <div className="page-container">
       <div className="page-title">contact me!&nbsp;</div>
       <div className="page-content">
         <div className="page-child" style={{ paddingBottom: "1rem" }}>
@@ -62,8 +62,6 @@ export default function Contact() {
             <div
               style={{
                 display: sent ? "block" : "none",
-                paddingBottom: "1.3rem",
-                paddingLeft: "1rem",
               }}
               className="sent-text pop-in"
             >

@@ -29,8 +29,10 @@
     "express": "^4.21.1",
     "http-proxy-middleware": "^3.0.3",
     "react-email": "3.0.1",
+    "react-spotify-embed": "^2.0.4",
     "resend": "^4.0.0",
     "sass": "^1.79.5",
+    "tech-stack-icons": "^2.1.0",
     "typescript": "^5",
     "typewriter-effect": "^2.21.0"
   }

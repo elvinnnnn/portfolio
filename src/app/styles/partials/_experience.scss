@@ -1,0 +1,130 @@
+@import "./pages";
+
+.stack-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.7rem;
+  color: #fbe9d0;
+  gap: 1rem; /* Adjust the gap between rows as needed */
+  border-style: solid;
+  border-color: #90aead;
+  border-width: 1px;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.stack-row {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  grid-template-rows: 1fr;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  div {
+    width: 100%;
+    max-width: 3rem;
+    transform: scale(0);
+  }
+}
+
+.stack-row div:nth-child(1),
+.stack-row div:nth-child(2),
+.stack-row div:nth-child(3),
+.stack-row div:nth-child(4),
+.stack-row div:nth-child(5),
+.stack-row div:nth-child(6),
+.stack-row div:nth-child(7),
+.stack-row div:nth-child(8),
+.stack-row div:nth-child(9),
+.stack-row div:nth-child(10) {
+  animation: 0.8s popin forwards;
+}
+.stack-row div:nth-child(1) {
+  animation-delay: 350ms;
+}
+.stack-row div:nth-child(2) {
+  animation-delay: 400ms;
+}
+.stack-row div:nth-child(3) {
+  animation-delay: 450ms;
+}
+.stack-row div:nth-child(4) {
+  animation-delay: 500ms;
+}
+.stack-row div:nth-child(5) {
+  animation-delay: 550ms;
+}
+.stack-row div:nth-child(6) {
+  animation-delay: 600ms;
+}
+.stack-row div:nth-child(7) {
+  animation-delay: 650ms;
+}
+.stack-row div:nth-child(8) {
+  animation-delay: 700ms;
+}
+.stack-row div:nth-child(9) {
+  animation-delay: 750ms;
+}
+.stack-row div:nth-child(10) {
+  animation-delay: 800ms;
+}
+
+.experience-content {
+  padding-top: 1rem;
+  font-size: 1.2rem;
+}
+.tab-container {
+  position: relative;
+  color: #afcdac;
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+
+.tab,
+.active {
+  transition: color 0.3s ease;
+  position: relative;
+  font-weight: 600;
+  width: max-content;
+}
+
+.active {
+  color: #e64833;
+}
+
+.tab:hover {
+  color: #e64833;
+}
+.tab::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 0.1rem;
+  width: 0;
+  background-color: #afcdac;
+  transition: width 0.2s;
+}
+
+.tab.active::after {
+  width: 100%;
+  background-color: #e64833;
+}
+
+.spotify-container {
+  display: flex;
+  flex-direction: column;
+}
+.spotify-text {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #90aead;
+}
