@@ -6,7 +6,7 @@
   flex-direction: column;
   font-size: 0.7rem;
   color: #fbe9d0;
-  gap: 1rem; /* Adjust the gap between rows as needed */
+  gap: 1rem;
   border-style: solid;
   border-color: #90aead;
   border-width: 1px;
@@ -16,7 +16,7 @@
 
 .stack-row {
   display: grid;
-  grid-template-columns: repeat(8, minmax(0, 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   grid-template-rows: 1fr;
   flex-wrap: wrap;
   gap: 3rem;
@@ -35,42 +35,26 @@
 .stack-row div:nth-child(3),
 .stack-row div:nth-child(4),
 .stack-row div:nth-child(5),
-.stack-row div:nth-child(6),
-.stack-row div:nth-child(7),
-.stack-row div:nth-child(8),
-.stack-row div:nth-child(9),
-.stack-row div:nth-child(10) {
+.stack-row div:nth-child(6) {
   animation: 0.8s popin forwards;
 }
 .stack-row div:nth-child(1) {
-  animation-delay: 350ms;
-}
-.stack-row div:nth-child(2) {
-  animation-delay: 400ms;
-}
-.stack-row div:nth-child(3) {
-  animation-delay: 450ms;
-}
-.stack-row div:nth-child(4) {
   animation-delay: 500ms;
 }
-.stack-row div:nth-child(5) {
+.stack-row div:nth-child(2) {
   animation-delay: 550ms;
 }
-.stack-row div:nth-child(6) {
+.stack-row div:nth-child(3) {
   animation-delay: 600ms;
 }
-.stack-row div:nth-child(7) {
+.stack-row div:nth-child(4) {
   animation-delay: 650ms;
 }
-.stack-row div:nth-child(8) {
+.stack-row div:nth-child(5) {
   animation-delay: 700ms;
 }
-.stack-row div:nth-child(9) {
+.stack-row div:nth-child(6) {
   animation-delay: 750ms;
-}
-.stack-row div:nth-child(10) {
-  animation-delay: 800ms;
 }
 
 .experience-content {

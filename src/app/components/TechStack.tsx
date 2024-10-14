@@ -28,6 +28,8 @@ export default function TechStack() {
           <StackIcon name="nextjs2" />
           <div>NextJS</div>
         </div>
+      </div>
+      <div className="stack-row">
         <div>
           <StackIcon name="python" />
           <div>Python</div>
@@ -36,8 +38,6 @@ export default function TechStack() {
           <StackIcon name="csharp" />
           <div>C#</div>
         </div>
-      </div>
-      <div className="stack-row">
         <div>
           <StackIcon name="postgresql" />
           <div>PostgreSQL</div>
@@ -52,24 +52,8 @@ export default function TechStack() {
           <div>NodeJS</div>
         </div>
         <div>
-          <StackIcon name="atlassian" />
-          <div>Atlassian</div>
-        </div>
-        <div>
           <StackIcon name="aws" />
           <div>AWS</div>
-        </div>
-        <div>
-          <StackIcon name="tailwindcss" />
-          <div>Tailwind</div>
-        </div>
-        <div>
-          <StackIcon name="sass" />
-          <div>Sass</div>
-        </div>
-        <div>
-          <StackIcon name="bootstrap5" />
-          <div>Bootstrap</div>
         </div>
       </div>
     </div>

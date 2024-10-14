@@ -29,6 +29,7 @@
     "express": "^4.21.1",
     "http-proxy-middleware": "^3.0.3",
     "react-email": "3.0.1",
+    "react-responsive-carousel": "^3.2.23",
     "react-spotify-embed": "^2.0.4",
     "resend": "^4.0.0",
     "sass": "^1.79.5",
