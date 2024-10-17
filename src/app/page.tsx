@@ -9,6 +9,7 @@ import {
   Contact,
   Projects,
   Footer,
+  Corners,
 } from "./components";
 import { useSearchParams } from "next/navigation";
 
@@ -33,6 +34,9 @@ export default function Home() {
   };
   return (
     <div className={`${styles.page} container`}>
+      <div className="corners-container">
+        <Corners />
+      </div>
       <div className="left-half">
         <div className="hub-container">
           <TypingText />

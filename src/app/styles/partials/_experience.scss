@@ -102,13 +102,33 @@
   width: 100%;
   background-color: #e64833;
 }
-
-.spotify-container {
-  display: flex;
-  flex-direction: column;
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
-.spotify-text {
-  margin-top: 1rem;
-  font-size: 1rem;
-  color: #90aead;
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.experience-content {
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.experience-content.fade-out {
+  animation-name: fadeOut;
+}
+
+.experience-content.fade-in {
+  animation-name: fadeIn;
 }

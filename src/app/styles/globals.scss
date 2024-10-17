@@ -45,15 +45,16 @@
 }
 
 .footer {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   font-size: 0.8rem;
-  width: 100%;
+  width: 30%;
   color: #90aead;
   text-align: center;
-  margin-bottom: 0.5rem;
   opacity: 0;
   animation: fade-in 1s ease-in forwards;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 // fade in animations
@@ -157,9 +158,6 @@
   .right-half {
     padding: 0rem 1rem 0rem 0rem;
   }
-  .an {
-    display: none;
-  }
 }
 
 @media (max-width: 1360px) {
@@ -173,6 +171,7 @@
     position: relative;
     bottom: auto;
     margin-top: 2rem;
+    width: 100%;
   }
   .left-half {
     padding: 0rem 10rem 0rem 10rem;
@@ -180,16 +179,15 @@
   .right-half {
     padding: 2rem 10rem 0rem 10rem;
   }
+  .corner,
+  .top-left,
+  .top-right,
+  .bottom-left,
+  .bottom-right {
+    display: none;
+  }
 }
 @media (max-width: 1360px) {
-  .container {
-    flex-direction: column;
-  }
-  .footer {
-    position: relative;
-    bottom: auto;
-    margin-top: 2rem;
-  }
   .left-half {
     padding: 0rem 5rem 0rem 5rem;
   }
@@ -199,14 +197,6 @@
 }
 
 @media (max-width: 1360px) {
-  .container {
-    flex-direction: column;
-  }
-  .footer {
-    position: relative;
-    bottom: auto;
-    margin-top: 2rem;
-  }
   .left-half {
     padding: 0rem 1rem 0rem 1rem;
   }
@@ -214,9 +204,10 @@
     padding: 2rem 1rem 0rem 1rem;
   }
 }
-@media (max-width: 777px) {
+@media (max-width: 785px) {
   .fav-songs {
     grid-template-columns: none;
+    grid-template-rows: repeat(3, minmax(0, 1fr));
   }
 }
 @media (max-width: 670px) {
@@ -234,21 +225,49 @@
     margin-top: -1rem;
     margin-bottom: 1rem;
   }
+  .page-container {
+    min-height: 0;
+    min-width: 0;
+  }
   .my-name {
     color: #e64833;
-  }
-  .container {
-    flex-direction: column;
-  }
-  .footer {
-    position: relative;
-    bottom: auto;
-    margin-top: 2rem;
   }
   .left-half {
     padding: 0rem;
   }
   .right-half {
     padding-top: 2rem;
+  }
+}
+
+// corners
+.corner {
+  position: fixed;
+  width: 2rem;
+  height: 2rem;
+  margin: 1rem;
+  background-color: #90aead;
+  opacity: 0.2;
+  &.top-left {
+    top: 0;
+    left: 0;
+    clip-path: polygon(0 0, 0 100%, 15% 100%, 15% 15%, 100% 15%, 100% 0);
+  }
+  &.top-right {
+    top: 0;
+    right: 0;
+    clip-path: polygon(0 0, 0 15%, 85% 15%, 85% 100%, 100% 100%, 100% 0);
+  }
+
+  &.bottom-left {
+    bottom: 0;
+    left: 0;
+    clip-path: polygon(15% 0, 0 0, 0 100%, 100% 100%, 100% 85%, 15% 85%);
+  }
+
+  &.bottom-right {
+    bottom: 0;
+    right: 0;
+    clip-path: polygon(85% 85%, 0 85%, 0 100%, 100% 100%, 100% 0, 85% 0);
   }
 }

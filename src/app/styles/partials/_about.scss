@@ -8,7 +8,9 @@
   margin-top: -1rem;
   margin-left: 1rem;
   opacity: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 .bio-container {
   display: flex;
 }
@@ -19,8 +21,12 @@
 
 .spotify-container {
   display: flex;
+  flex-direction: column;
   .spotify-text {
     padding-bottom: 0.5rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #90aead;
   }
 }
 
