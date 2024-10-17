@@ -4,7 +4,7 @@ export default function Socials() {
   return (
     <div className="socials-container">
       <Link
-        href="/resume/resume.pdf"
+        href="/resume.pdf"
         download="ElvinLeeResume.pdf"
         target="_blank"
         rel="noopener noreferrer"

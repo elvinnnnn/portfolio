@@ -1,0 +1,72 @@
+.inactive-project,
+.active-project {
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  margin: 0.2rem 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-style: solid;
+  border-width: 0.1rem;
+  width: 100%;
+  position: relative;
+  margin-left: 0rem;
+  transition: margin-left 0.3s ease, border-color 0.3s ease;
+}
+
+.active-project {
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: multiply;
+  border-color: #e64833;
+  aspect-ratio: 16/6;
+  .project-title {
+    font-weight: 700;
+  }
+}
+
+.projects {
+  opacity: 0;
+  animation: fade-in 1.2s ease-in-out forwards;
+  animation-delay: 0.8s;
+}
+
+.inactive-project {
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: multiply;
+  padding: 0.5rem 0;
+  border-color: #90aead;
+}
+
+.active-project:hover,
+.inactive-project:hover {
+  margin-left: -1rem;
+  border-color: #e64833;
+}
+
+.page-child {
+  .inactive-project {
+    height: 5%;
+  }
+  .active-project {
+    height: 50rem;
+  }
+}
+
+.project-content {
+  padding: 0.4rem 1rem;
+}
+
+.project-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4rem 1rem;
+  box-sizing: border-box;
+
+  .project-redirect,
+  .project-tech {
+    position: relative;
+  }
+}
