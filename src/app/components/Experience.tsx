@@ -36,13 +36,19 @@ export default function Experience() {
     ),
     2: (
       <div>
-        Github Contributions (WIP)
+        Contributions
         <ul>
-          <li>Make a C# Plugin for Simple Tweaks FFXIV</li>
+          <li>Make a C# Plugin for Simple Tweaks </li>
           <li>
-            Other contributions to open source github repositories (bugs,
-            features, design improvements, refactoring, etc).{" "}
+            Other open source GitHub repositories (bugs, features, design
+            improvements, refactoring).{" "}
           </li>
+        </ul>
+        Certifications
+        <ul>
+          <li>Microsoft Azure Fundamentals AZ900 (WIP)</li>
+          <li>AWS Certified Cloud Practitioner (CLF-C02) (WIP)</li>
+          <li>AWS Solutions Architect Associate (WIP)</li>
         </ul>
       </div>
     ),
@@ -72,7 +78,7 @@ export default function Experience() {
               className={`tab ${index === 2 ? "active" : ""}`}
               onClick={() => setIndex(2)}
             >
-              Github Contributions
+              Certifications
             </button>
           </div>
           <div className="tab-underline"></div>

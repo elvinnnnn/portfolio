@@ -6,54 +6,54 @@ export default function TechStack() {
       <div className="stack-row">
         <div>
           <StackIcon name="js" />
-          <div>JavaScript</div>
+          <div className="stack-name">JavaScript</div>
         </div>
         <div>
           <StackIcon name="typescript" />
-          <div>TypeScript</div>
+          <div className="stack-name">TypeScript</div>
         </div>
         <div>
           <StackIcon name="html5" />
-          <div>HTML</div>
+          <div className="stack-name">HTML</div>
         </div>
         <div>
           <StackIcon name="css3" />
-          <div>CSS</div>
+          <div className="stack-name">CSS</div>
         </div>
         <div>
           <StackIcon name="reactjs" />
-          <div>React</div>
+          <div className="stack-name">React</div>
         </div>
         <div>
           <StackIcon name="nextjs2" />
-          <div>NextJS</div>
+          <div className="stack-name">NextJS</div>
         </div>
       </div>
       <div className="stack-row">
         <div>
           <StackIcon name="python" />
-          <div>Python</div>
+          <div className="stack-name">Python</div>
         </div>
         <div>
           <StackIcon name="csharp" />
-          <div>C#</div>
+          <div className="stack-name">C#</div>
         </div>
         <div>
           <StackIcon name="postgresql" />
-          <div>PostgreSQL</div>
+          <div className="stack-name">PostgreSQL</div>
         </div>
         <div>
           <StackIcon name="mongodb" />
-          <div>MongoDB</div>
+          <div className="stack-name">MongoDB</div>
         </div>
 
         <div>
           <StackIcon name="nodejs" />
-          <div>NodeJS</div>
+          <div className="stack-name">NodeJS</div>
         </div>
         <div>
           <StackIcon name="aws" />
-          <div>AWS</div>
+          <div className="stack-name">AWS</div>
         </div>
       </div>
     </div>
