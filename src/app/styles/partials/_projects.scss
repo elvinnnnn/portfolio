@@ -18,6 +18,8 @@
   background-blend-mode: multiply;
   border-color: #e64833;
   aspect-ratio: 16/6;
+  opacity: 0;
+  animation: fade-in 0.6s ease-out forwards;
   .project-title {
     font-weight: 700;
   }
