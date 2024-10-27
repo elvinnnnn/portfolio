@@ -6,18 +6,37 @@ export default function Experience() {
   const experience: { [key: number]: JSX.Element } = {
     0: (
       <div>
-        <div>University of New South Wales</div>
+        <div>Computer Science</div>
+        <ul>
+          <li>Rewarded Best project Award for Computer Graphics Project</li>
+          <li>
+            Completed subjects in networks, databases, functional programming,
+            computer graphics, computer systems, discrete/finite mathematics
+          </li>
+        </ul>
+        <div>Software Development</div>
         <ul>
           <li>
-            Shortlisted for the Optiver Prize in regards to my Software
-            Engineering Workshop 3 Project
+            Shortlisted for the Optiver Prize in Software Engineering Workshop 3
+            Project
           </li>
-          <li>Rewarded Best project Award for Computer Graphics Project</li>
           <li>Completed all available Software Engineering Workshops</li>
         </ul>
       </div>
     ),
     1: (
+      <div>
+        Microsoft Certified: Azure Fundamentals (AZ900)
+        <ul>
+          <li>Demonstrated knowledge in cloud concepts and cloud computing</li>
+          <li>Described multiple Azure architectures and services</li>
+          <li>Exposure to Azure management and data governance</li>
+        </ul>
+        AWS Certified: Cloud Practitioner (CLF-C02) (In-Progress) <p />
+        AWS Certified: Solutions Architect Associate (SAA-C03) (In-Progress)
+      </div>
+    ),
+    2: (
       <div>
         Technical Support at Taiwanese Student Association
         <ul>
@@ -31,24 +50,6 @@ export default function Experience() {
             shared drives, or other network-related concerns during society
             events or meetings.
           </li>
-        </ul>
-      </div>
-    ),
-    2: (
-      <div>
-        Contributions
-        <ul>
-          <li>Make a C# Plugin for Simple Tweaks </li>
-          <li>
-            Other open source GitHub repositories (bugs, features, design
-            improvements, refactoring).{" "}
-          </li>
-        </ul>
-        Certifications
-        <ul>
-          <li>Microsoft Azure Fundamentals AZ900 (WIP)</li>
-          <li>AWS Certified Cloud Practitioner (CLF-C02) (WIP)</li>
-          <li>AWS Solutions Architect Associate (WIP)</li>
         </ul>
       </div>
     ),
@@ -66,19 +67,19 @@ export default function Experience() {
               className={`tab ${index === 0 ? "active" : ""}`}
               onClick={() => setIndex(0)}
             >
-              CS/SENG
+              University of New South Wales
             </button>
             <button
               className={`tab ${index === 1 ? "active" : ""}`}
               onClick={() => setIndex(1)}
             >
-              Technical Support
+              Certifications
             </button>
             <button
               className={`tab ${index === 2 ? "active" : ""}`}
               onClick={() => setIndex(2)}
             >
-              Certifications
+              Technical Support
             </button>
           </div>
           <div className="tab-underline"></div>

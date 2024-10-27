@@ -121,14 +121,22 @@
 }
 
 .experience-content {
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-}
+  ul {
+    margin-top: 0;
+    list-style-type: none;
+  }
+  li {
+    font-size: 1.1rem;
+    padding-left: 1.2rem;
+    position: relative;
+  }
 
-.experience-content.fade-out {
-  animation-name: fadeOut;
-}
-
-.experience-content.fade-in {
-  animation-name: fadeIn;
+  li::before {
+    content: ">";
+    position: absolute;
+    left: 0;
+    color: #e64833;
+    font-size: 1rem;
+    font-weight: 600;
+  }
 }

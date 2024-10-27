@@ -50,7 +50,7 @@ export default function About() {
             <Spotify
               className="spotify-card"
               wide
-              link="https://open.spotify.com/track/0jNhSK5gotdRB1G4nMqEau"
+              link="https://open.spotify.com/track/4JcS9WIUfDny6XJ82GqMpZ"
             />
             <Spotify
               className="spotify-card"

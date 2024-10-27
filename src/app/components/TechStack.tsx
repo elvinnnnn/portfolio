@@ -48,8 +48,8 @@ export default function TechStack() {
         </div>
 
         <div>
-          <StackIcon name="nodejs" />
-          <div className="stack-name">NodeJS</div>
+          <StackIcon name="azure" />
+          <div className="stack-name">Azure</div>
         </div>
         <div>
           <StackIcon name="aws" />
