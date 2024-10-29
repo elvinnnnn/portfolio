@@ -10,12 +10,13 @@
 
 .highlight {
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 600;
   color: #90aead;
+  transition: color 0.3s;
 }
 
 .highlight:hover {
-  font-weight: 600;
+  color: #e64833;
 }
 
 .container {
@@ -242,6 +243,9 @@
   }
   .stack-name {
     display: none;
+  }
+  .stack-row {
+    gap: 1rem;
   }
   .project-description {
     font-size: 1rem;

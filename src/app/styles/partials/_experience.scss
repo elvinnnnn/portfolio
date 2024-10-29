@@ -102,6 +102,7 @@
   width: 100%;
   background-color: #e64833;
 }
+
 @keyframes fadeOut {
   from {
     opacity: 1;
@@ -138,5 +139,18 @@
     color: #e64833;
     font-size: 1rem;
     font-weight: 600;
+  }
+  opacity: 0;
+  animation: fade-in-from-bottom 0.5s ease-in-out forwards;
+}
+
+@keyframes fade-in-from-bottom {
+  0% {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
