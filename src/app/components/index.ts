@@ -8,3 +8,4 @@ export { default as About } from "./About";
 export { default as Footer } from "./Footer";
 export { default as TechStack } from "./TechStack";
 export { default as Corners } from "./Corners";
+export { default as ExperiencesContent } from "./ExperiencesContent";

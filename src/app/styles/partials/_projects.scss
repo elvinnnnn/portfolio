@@ -14,7 +14,7 @@
 }
 
 .active-project {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.7) !important;
   background-blend-mode: multiply;
   border-color: #e64833;
   aspect-ratio: 16/6;
@@ -25,14 +25,8 @@
   }
 }
 
-.projects {
-  opacity: 0;
-  animation: fade-in 1.2s ease-in-out forwards;
-  animation-delay: 0.8s;
-}
-
 .inactive-project {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8) !important;
   background-blend-mode: multiply;
   padding: 0.5rem 0;
   border-color: #90aead;
@@ -42,15 +36,6 @@
 .inactive-project:hover {
   margin-left: -1rem;
   border-color: #e64833;
-}
-
-.page-child {
-  .inactive-project {
-    height: 5%;
-  }
-  .active-project {
-    height: 50rem;
-  }
 }
 
 .project-content {

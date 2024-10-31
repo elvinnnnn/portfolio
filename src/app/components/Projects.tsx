@@ -50,7 +50,7 @@ function Projects() {
         {Object.keys(projects).map((key) => {
           const project = projects[key];
           return (
-            <div key={key} className="project-container">
+            <div key={key} className="page-child">
               {key === active ? (
                 <div
                   style={{

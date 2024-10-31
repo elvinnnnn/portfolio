@@ -28,7 +28,7 @@
 .left-half {
   align-items: center;
   display: flex;
-  padding: 0rem 0rem 0rem 10rem;
+  padding: 0rem 0rem 0rem 12rem;
   flex: 1;
   .hub-container {
     flex: 1;
@@ -38,7 +38,7 @@
 .right-half {
   align-items: center;
   display: flex;
-  padding: 0rem 10rem 0rem 0rem;
+  padding: 0rem 12rem 0rem 0rem;
   color: #fbe9d0;
   flex: 1;
   .content-container {
@@ -249,6 +249,9 @@
   }
   .project-description {
     font-size: 1rem;
+  }
+  .active-project {
+    aspect-ratio: 2/1;
   }
 }
 

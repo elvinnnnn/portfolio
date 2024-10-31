@@ -1,69 +1,18 @@
-import { TechStack } from "./index";
-import React from "react";
+import { TechStack, ExperiencesContent } from "./index";
+import React, { useEffect, useState } from "react";
 
 export default function Experience() {
-  const [index, setIndex] = React.useState<number>(0);
+  const [index, setIndex] = useState<number>(0);
+  const [isCramped, setIsCramped] = useState<boolean>(window.innerWidth <= 670);
 
-  const experiences = (index: number) => {
-    return (
-      <>
-        <div
-          style={{ display: index === 0 ? "block" : "none" }}
-          className="experience-content"
-        >
-          <div>Computer Science</div>
-          <ul>
-            <li>Rewarded Best project Award for Computer Graphics Project</li>
-            <li>
-              Completed subjects in networks, databases, functional programming,
-              computer graphics, computer systems, discrete/finite mathematics
-            </li>
-          </ul>
-          <div>Software Development</div>
-          <ul>
-            <li>
-              Shortlisted for the Optiver Prize in Software Engineering Workshop
-              3 Project
-            </li>
-            <li>Completed all available Software Engineering Workshops</li>
-          </ul>
-        </div>
-        <div
-          style={{ display: index === 1 ? "block" : "none" }}
-          className="experience-content"
-        >
-          Microsoft Certified: Azure Fundamentals (AZ900)
-          <ul>
-            <li>
-              Demonstrated knowledge in cloud concepts and cloud computing
-            </li>
-            <li>Described multiple Azure architectures and services</li>
-            <li>Exposure to Azure management and data governance</li>
-          </ul>
-          AWS Certified: Cloud Practitioner (CLF-C02) (In-Progress) <p />
-          AWS Certified: Solutions Architect Associate (SAA-C03) (In-Progress)
-        </div>
-        <div
-          style={{ display: index === 2 ? "block" : "none" }}
-          className="experience-content"
-        >
-          Technical Support at Taiwanese Student Association
-          <ul>
-            <li>
-              Assisting with the technical aspects of events, such as setting up
-              audio-visual equipment, managing online platforms for virtual
-              events, and ensuring smooth operation during events.
-            </li>
-            <li>
-              Helping with issues related to internet connectivity, access to
-              shared drives, or other network-related concerns during society
-              events or meetings.
-            </li>
-          </ul>
-        </div>
-      </>
-    );
-  };
+  useEffect(() => {
+    const handleResize = () => {
+      setIsCramped(window.innerWidth <= 670);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <div className="page-container">
@@ -75,10 +24,10 @@ export default function Experience() {
         <div className="page-child">
           <div className="tab-container">
             <button
-              className={`tab ${index === 0 ? "active" : ""} unsw-tab`}
+              className={`tab ${index === 0 ? "active" : ""}`}
               onClick={() => setIndex(0)}
             >
-              University of New South Wales
+              {isCramped ? "UNSW" : "University of New South Wales"}
             </button>
             <button
               className={`tab ${index === 1 ? "active" : ""}`}
@@ -95,7 +44,9 @@ export default function Experience() {
           </div>
           <div className="tab-underline"></div>
         </div>
-        <div className="page-child">{experiences(index)}</div>
+        <div className="page-child">
+          <ExperiencesContent index={index} />
+        </div>
       </div>
     </div>
   );

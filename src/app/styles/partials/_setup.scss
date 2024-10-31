@@ -1,12 +1,10 @@
-body {
-  overflow: hidden;
-  background-color: #244855;
+* {
+  margin: 0;
+  padding: 0;
 }
-
-@media (max-width: 1700px) {
-  body {
-    overflow: auto;
-  }
+body {
+  background-color: #244855;
+  overflow: hidden;
 }
 
 // remove all the ugly default stuff eugh

@@ -34,7 +34,7 @@ export default function About() {
         </div>
         <div className="page-child hobby-container">
           When I’m not immersed in tech, you can find me exploring my love for
-          music and gaming. I love having a creative outlet, and I am currently
+          music and gaming. I enjoy having a creative outlet, and I am currently
           learning to draw and produce music.
         </div>
         <div className="page-child spotify-container">
