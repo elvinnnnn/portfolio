@@ -16,11 +16,9 @@ import AnimatedCursor from "react-animated-cursor";
 
 export default function Home() {
   const searchParams = useSearchParams();
-  const section = searchParams.get("");
+  const section = searchParams.get("") || "";
   const renderContent = () => {
     switch (section) {
-      case "/":
-        return <About />;
       case "about":
         return <About />;
       case "experience":
@@ -42,7 +40,7 @@ export default function Home() {
       <div className="left-half">
         <div className="hub-container">
           <TypingText />
-          <Nav />
+          <Nav section={section} />
           <Socials />
         </div>
       </div>

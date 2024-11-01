@@ -18,6 +18,7 @@
 .nav-button {
   padding-left: 0.7rem;
   transition: padding-left 0.3s ease, color 0.3s ease;
+  position: relative; /* Ensure the pseudo-element is positioned correctly */
   &::after {
     content: "/";
     position: absolute;
@@ -26,19 +27,28 @@
   }
 }
 
-.nav-button:hover {
+.nav-button:hover,
+.nav-button.active-link {
   padding-left: 0rem;
   color: #e64833;
 }
-.nav-button.about-link:hover::after {
+
+.nav-button.about-link:hover::after,
+.nav-button.about-link.active-link::after {
   left: 5.3rem;
 }
-.nav-button.experience-link:hover::after {
+
+.nav-button.experience-link:hover::after,
+.nav-button.experience-link.active-link::after {
   left: 9.7rem;
 }
-.nav-button.projects-link:hover::after {
+
+.nav-button.projects-link:hover::after,
+.nav-button.projects-link.active-link::after {
   left: 7.6rem;
 }
-.nav-button.contact-link:hover::after {
+
+.nav-button.contact-link:hover::after,
+.nav-button.contact-link.active-link::after {
   left: 7rem;
 }
