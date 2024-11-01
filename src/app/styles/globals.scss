@@ -63,7 +63,7 @@
 @keyframes fade-in-from-left {
   0% {
     opacity: 0;
-    transform: translateX(-30rem);
+    transform: translateX(-10rem);
   }
   100% {
     opacity: 1;
@@ -75,7 +75,7 @@
 .nav-container,
 .socials-container {
   opacity: 0;
-  transform: translateX(-30rem);
+  transform: translateX(-10rem);
   animation: fade-in-from-left 0.8s ease-in-out forwards;
 }
 .typing-text-container {
@@ -99,7 +99,7 @@
 @keyframes fade-in-from-right {
   0% {
     opacity: 0;
-    transform: translateX(30rem);
+    transform: translateX(10rem);
   }
   100% {
     opacity: 1;
@@ -114,7 +114,7 @@
 .page-child:nth-child(5),
 .page-title {
   opacity: 0;
-  transform: translateX(30rem);
+  transform: translateX(10rem);
   animation: fade-in-from-right 0.8s ease-in-out forwards;
 }
 .page-title {
