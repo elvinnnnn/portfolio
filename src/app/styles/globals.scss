@@ -164,6 +164,9 @@
 }
 
 @media (max-width: 1360px) {
+  body {
+    overflow: auto;
+  }
   .fav-songs {
     grid-template-columns: repeat(3, 1fr);
   }
