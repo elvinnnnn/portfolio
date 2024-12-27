@@ -28,7 +28,6 @@
     "eslint-config-next": "14.2.15",
     "express": "^4.21.1",
     "http-proxy-middleware": "^3.0.3",
-    "react-animated-cursor": "^2.11.2",
     "react-bootstrap": "^2.10.5",
     "react-email": "^1.10.1",
     "react-spotify-embed": "^2.0.4",

@@ -12,7 +12,6 @@ import {
   Corners,
 } from "./components";
 import { useSearchParams } from "next/navigation";
-import AnimatedCursor from "react-animated-cursor";
 
 export default function Home() {
   const searchParams = useSearchParams();
@@ -33,7 +32,6 @@ export default function Home() {
   };
   return (
     <div className={`${styles.page} container`}>
-      <AnimatedCursor />
       <div className="corners-container">
         <Corners />
       </div>

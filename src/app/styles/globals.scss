@@ -76,16 +76,16 @@
 .socials-container {
   opacity: 0;
   transform: translateX(-10rem);
-  animation: fade-in-from-left 0.8s ease-in-out forwards;
+  animation: fade-in-from-left 0.6s ease-in-out forwards;
 }
 .typing-text-container {
-  animation-delay: 250ms;
+  animation-delay: 50ms;
 }
 .nav-container {
-  animation-delay: 300ms;
+  animation-delay: 100ms;
 }
 .socials-container {
-  animation-delay: 450ms;
+  animation-delay: 150ms;
 }
 
 @keyframes fade-in {
@@ -115,25 +115,25 @@
 .page-title {
   opacity: 0;
   transform: translateX(10rem);
-  animation: fade-in-from-right 0.8s ease-in-out forwards;
+  animation: fade-in-from-right 0.6s ease-in-out forwards;
 }
 .page-title {
   animation-delay: 50ms;
 }
 .page-child:nth-child(1) {
-  animation-delay: 150ms;
+  animation-delay: 100ms;
 }
 .page-child:nth-child(2) {
-  animation-delay: 250ms;
+  animation-delay: 150ms;
 }
 .page-child:nth-child(3) {
-  animation-delay: 350ms;
+  animation-delay: 200ms;
 }
 .page-child:nth-child(4) {
-  animation-delay: 450ms;
+  animation-delay: 250ms;
 }
 .page-child:nth-child(5) {
-  animation-delay: 550ms;
+  animation-delay: 300ms;
 }
 
 // viewport handlers
