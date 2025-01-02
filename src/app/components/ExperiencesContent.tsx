@@ -7,7 +7,7 @@ export default function ExperiencesContent({ index }: { index: number }) {
         style={{ display: index === 0 ? "block" : "none" }}
         className="experience-content"
       >
-        <div>Computer Science</div>
+        Computer Science
         <ul>
           <li>Rewarded Best project Award for Computer Graphics Project</li>
           <li>
@@ -15,7 +15,7 @@ export default function ExperiencesContent({ index }: { index: number }) {
             computer graphics, computer systems, discrete/finite mathematics
           </li>
         </ul>
-        <div>Software Development</div>
+        Software Development
         <ul>
           <li>
             Shortlisted for the Optiver Prize in Software Engineering Workshop 3
@@ -23,6 +23,7 @@ export default function ExperiencesContent({ index }: { index: number }) {
           </li>
           <li>Completed all available Software Engineering Workshops</li>
         </ul>
+        Graduate Certificate in Data Science (In-Progress)
       </div>
       <div
         style={{ display: index === 1 ? "block" : "none" }}
@@ -30,28 +31,45 @@ export default function ExperiencesContent({ index }: { index: number }) {
       >
         Microsoft Certified: Azure Fundamentals (AZ900)
         <ul>
-          <li>Demonstrated knowledge in cloud concepts and cloud computing</li>
           <li>Described multiple Azure architectures and services</li>
           <li>Exposure to Azure management and data governance</li>
         </ul>
-        AWS Certified: Cloud Practitioner (CLF-C02) (In-Progress) <p />
+        AWS Certified: Cloud Practitioner (CLF-C02) <p />
+        <ul>
+          <li>Understood cloud principles in AWS</li>
+          <li>
+            Fundamental knowledge of AWS cloud concepts, services, and
+            terminology
+          </li>
+        </ul>
         AWS Certified: Solutions Architect Associate (SAA-C03) (In-Progress)
       </div>
       <div
         style={{ display: index === 2 ? "block" : "none" }}
         className="experience-content"
       >
-        Technical Support at Taiwanese Student Association
+        Taiwanese Student Association (TSA)
         <ul>
           <li>
-            Assisting with the technical aspects of events, such as setting up
-            audio-visual equipment, managing online platforms for virtual
-            events, and ensuring smooth operation during events.
+            Assisted with the tech for events, such as setting up audio-visual
+            equipment, managing online platforms, and ensuring smooth
+            operations.
           </li>
           <li>
-            Helping with issues related to internet connectivity, access to
-            shared drives, or other network-related concerns during society
-            events or meetings.
+            Troubleshooted software and hardware issues (installations,
+            connectivity, common OS failures)
+          </li>
+        </ul>
+        Phillip Baxter Catering Chatbot
+        <ul>
+          <li>
+            Provided support for managing catering enquiries when using the
+            Phillip Baxter chatbot.
+          </li>
+          <li>
+            The chatbot was designed to be user-friendly, with a simple
+            interface that allows users to easily select their desired food
+            items and place an order.
           </li>
         </ul>
       </div>

@@ -9,7 +9,7 @@ export default function About() {
       <div className="page-content">
         <div className="page-child bio-container">
           <div>
-            Hello! I&apos;m a recent
+            Hello! I&apos;m a
             <Link
               href="https://www.unsw.edu.au/"
               rel="noopener noreferrer"
@@ -19,10 +19,10 @@ export default function About() {
               {" "}
               UNSW{" "}
             </Link>
-            Computer Science graduate with a passion for technology, creative
-            problem-solving, and the belief that everyone has something valuable
-            to teach. I thrive on staying curious and am always ready to dive
-            into new challenges. Please feel free to have a look around! 😊
+            Computer Science graduate currently studying for a Graduate
+            Certificate in Data Science. I have a passion for technology, thrive
+            on curiosity, and am always eager to embrace new challenges. Please
+            feel free to have a look around! 😊
           </div>
           <Image
             className="profile-pic fade-in"
