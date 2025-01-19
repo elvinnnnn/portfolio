@@ -1,45 +1,25 @@
-.inactive-project,
-.active-project {
-  background-size: cover;
-  background-position: center;
-  border-radius: 10px;
-  margin: 0.2rem 0;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.project-panel {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  background-blend-mode: multiply;
+  opacity: 0;
+  width: 100%;
   border-style: solid;
   border-width: 0.1rem;
-  width: 100%;
-  position: relative;
-  margin-left: 0rem;
+  margin: 0.2rem 0;
   transition: margin-left 0.3s ease, border-color 0.3s ease;
-}
-
-.active-project {
-  background-color: rgba(0, 0, 0, 0.7) !important;
-  background-blend-mode: multiply;
-  border-color: #e64833;
-  aspect-ratio: 16/6;
-  opacity: 0;
-  animation: fade-in 0.6s ease-out forwards;
+  box-sizing: border-box;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
   .project-title {
     font-weight: 700;
   }
 }
 
-.inactive-project {
-  background-color: rgba(0, 0, 0, 0.8) !important;
-  background-blend-mode: multiply;
-  padding: 0.5rem 0;
-  border-color: #90aead;
-}
-
-.active-project:hover,
-.inactive-project:hover {
+.project-panel:hover {
   margin-left: -1rem;
   border-color: #e64833;
-}
-
-.project-content {
-  padding: 0.4rem 1rem;
 }
 
 .project-footer {
@@ -56,4 +36,37 @@
   .project-tech {
     position: relative;
   }
+}
+
+.project-content {
+  padding: 0.4rem 0 0rem 1rem;
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.5s;
+}
+
+.project-content[aria-hidden="false"] {
+  grid-template-rows: 1fr;
+}
+
+.project-content > div {
+  overflow: hidden;
+}
+
+.project-title {
+  padding: 1rem 0 1rem 0.5rem;
+}
+
+.project-title:hover {
+  color: #e64833;
+}
+
+.project-link {
+  float: right;
+  padding-right: 0.5rem;
+}
+
+.project-tech {
+  font-size: 1rem;
+  padding: 1rem 0 0 0;
 }
