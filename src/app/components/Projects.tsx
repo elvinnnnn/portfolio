@@ -86,7 +86,8 @@ function Projects() {
               aria-hidden={activePanel !== index}
             >
               <div>
-                {panel.description}
+                <div className="project-description">{panel.description}</div>
+
                 <div className="project-tech">
                   {panel.tech}
                   <div className="project-link">

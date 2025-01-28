@@ -7,6 +7,33 @@ export default function ExperiencesContent({ index }: { index: number }) {
         style={{ display: index === 0 ? "block" : "none" }}
         className="experience-content"
       >
+        TechOps Specialist at FCCCI
+        <ul>
+          <li>
+            Enhanced FCCCI chatbot performance via updates and debugging,
+            boosting response accuracy by 25% and cutting downtime by 15%.
+          </li>
+          <li>
+            Resolved 150+ hardware/software issues, ensuring seamless operations
+            and user efficiency.
+          </li>
+        </ul>
+        Co-Founder of JobEase B2C Platform
+        <ul>
+          <li>
+            Launched a beta platform to transform job search and recruitment,
+            managing product design, development, and iteration.
+          </li>
+          <li>
+            Led cross-functional efforts in product strategy, technical
+            architecture, and user acquisition.
+          </li>
+        </ul>
+      </div>
+      <div
+        style={{ display: index === 1 ? "block" : "none" }}
+        className="experience-content"
+      >
         Computer Science
         <ul>
           <li>Rewarded Best project Award for Computer Graphics Project</li>
@@ -26,7 +53,7 @@ export default function ExperiencesContent({ index }: { index: number }) {
         Graduate Certificate in Data Science (In-Progress)
       </div>
       <div
-        style={{ display: index === 1 ? "block" : "none" }}
+        style={{ display: index === 2 ? "block" : "none" }}
         className="experience-content"
       >
         Microsoft Certified: Azure Fundamentals (AZ900)
@@ -43,35 +70,6 @@ export default function ExperiencesContent({ index }: { index: number }) {
           </li>
         </ul>
         AWS Certified: Solutions Architect Associate (SAA-C03) (In-Progress)
-      </div>
-      <div
-        style={{ display: index === 2 ? "block" : "none" }}
-        className="experience-content"
-      >
-        Taiwanese Student Association (TSA)
-        <ul>
-          <li>
-            Assisted with the tech for events, such as setting up audio-visual
-            equipment, managing online platforms, and ensuring smooth
-            operations.
-          </li>
-          <li>
-            Troubleshooted software and hardware issues (installations,
-            connectivity, common OS failures)
-          </li>
-        </ul>
-        Phillip Baxter Catering Chatbot
-        <ul>
-          <li>
-            Provided support for managing catering enquiries when using the
-            Phillip Baxter chatbot.
-          </li>
-          <li>
-            The chatbot was designed to be user-friendly, with a simple
-            interface that allows users to easily select their desired food
-            items and place an order.
-          </li>
-        </ul>
       </div>
     </>
   );

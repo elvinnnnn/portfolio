@@ -33,7 +33,7 @@ export default function TypingText() {
                 .pauseFor(2500)
                 .deleteAll()
                 .typeString(
-                  '<span style="color: #e64833; font-size: 1.8rem; font-weight: 600;">programmer.</span>'
+                  '<span style="color: #e64833; font-size: 1.8rem; font-weight: 600;">scientist.</span>'
                 )
                 .pauseFor(2500)
                 .deleteAll()

@@ -27,19 +27,19 @@ export default function Experience() {
               className={`tab ${index === 0 ? "active" : ""}`}
               onClick={() => setIndex(0)}
             >
-              {isCramped ? "UNSW" : "University of New South Wales"}
+              Work Experience
             </button>
             <button
               className={`tab ${index === 1 ? "active" : ""}`}
               onClick={() => setIndex(1)}
             >
-              Certifications
+              {isCramped ? "UNSW" : "University of New South Wales"}
             </button>
             <button
               className={`tab ${index === 2 ? "active" : ""}`}
               onClick={() => setIndex(2)}
             >
-              Technical Support
+              Certifications
             </button>
           </div>
           <div className="tab-underline"></div>
