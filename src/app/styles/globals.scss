@@ -11,12 +11,12 @@
 .highlight {
   text-decoration: none;
   font-weight: 600;
-  color: #90aead;
+  color: #9a8c98;
   transition: color 0.3s;
 }
 
 .highlight:hover {
-  color: #e64833;
+  color: #c9ada7;
 }
 
 .container {
@@ -39,7 +39,7 @@
   align-items: center;
   display: flex;
   padding: 0rem 12rem 0rem 0rem;
-  color: #fbe9d0;
+  color: #f2e9e4;
   flex: 1;
   .content-container {
     flex: 1;
@@ -51,7 +51,7 @@
   bottom: 0;
   font-size: 0.8rem;
   width: 30%;
-  color: #90aead;
+  color: #4a4e69;
   text-align: center;
   opacity: 0;
   animation: fade-in 1s ease-in forwards;
@@ -236,7 +236,7 @@
     min-width: 0;
   }
   .my-name {
-    color: #e64833;
+    color: #c9ada7;
   }
   .left-half {
     padding: 0rem;
@@ -264,7 +264,7 @@
   width: 2rem;
   height: 2rem;
   margin: 1rem;
-  background-color: #90aead;
+  background-color: #4a4e69;
   opacity: 0.2;
   &.top-left {
     top: 0;
