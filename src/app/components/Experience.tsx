@@ -27,7 +27,7 @@ export default function Experience() {
               className={`tab ${index === 0 ? "active" : ""}`}
               onClick={() => setIndex(0)}
             >
-              Work Experience
+              Experience
             </button>
             <button
               className={`tab ${index === 1 ? "active" : ""}`}

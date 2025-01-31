@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Spotify } from "react-spotify-embed";
+import "react-tooltip/dist/react-tooltip.css";
+import { Tooltip } from "react-tooltip";
 
 export default function About() {
   return (
@@ -19,10 +21,21 @@ export default function About() {
               {" "}
               UNSW{" "}
             </Link>
-            Computer Science graduate currently studying for a Graduate
-            Certificate in Data Science. I have a passion for technology, thrive
-            on curiosity, and am always eager to embrace new challenges. Please
-            feel free to have a look around! 😊
+            Computer Science graduate currently studying for a{" "}
+            <Link
+              href="https://www.unsw.edu.au/"
+              rel="noopener noreferrer"
+              className="highlight"
+              target="_blank"
+              data-tooltip-id="my-tooltip"
+              data-tooltip-content="Willing to adjust to part-time study!"
+            >
+              <Tooltip id="my-tooltip" />
+              Graduate Certificate in Data Science
+            </Link>{" "}
+            I have a passion for technology, thrive on curiosity, and am always
+            eager to embrace new challenges. Please feel free to have a look
+            around! 😊
           </div>
           <Image
             className="profile-pic fade-in"

@@ -7,26 +7,24 @@ export default function ExperiencesContent({ index }: { index: number }) {
         style={{ display: index === 0 ? "block" : "none" }}
         className="experience-content"
       >
-        TechOps Specialist at FCCCI
+        Software Developer at Phillip Baxter (Volunteer)
         <ul>
           <li>
-            Enhanced FCCCI chatbot performance via updates and debugging,
-            boosting response accuracy by 25% and cutting downtime by 15%.
-          </li>
-          <li>
-            Resolved 150+ hardware/software issues, ensuring seamless operations
-            and user efficiency.
+            Implemented multi-intent handling and TTL caching on Python catering
+            chatbot, resulting in a 25% reduction in required user-input and a
+            65% increase in response accuracy.
           </li>
         </ul>
-        Co-Founder of JobEase B2C Platform
+        Support Engineer at FCCCI (Non-Profit)
         <ul>
           <li>
-            Launched a beta platform to transform job search and recruitment,
-            managing product design, development, and iteration.
+            Diagnosed and resolved 150+ hardware and software issues for
+            customers, ensuring seamless operations and minimizing downtime to
+            maintain event efficiency.
           </li>
           <li>
-            Led cross-functional efforts in product strategy, technical
-            architecture, and user acquisition.
+            Developed website with WordPress CMS, enhancing user experience and
+            increasing site traffic by 30%.
           </li>
         </ul>
       </div>
