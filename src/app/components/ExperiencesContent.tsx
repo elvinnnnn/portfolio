@@ -11,8 +11,8 @@ export default function ExperiencesContent({ index }: { index: number }) {
         <ul>
           <li>
             Implemented multi-intent handling and TTL caching on Python catering
-            chatbot, resulting in a 25% reduction in required user-input and a
-            65% increase in response accuracy.
+            chatbot, resulting in reduction of required user-input and a
+            significant increase in response accuracy.
           </li>
         </ul>
         Support Engineer at FCCCI (Non-Profit)
