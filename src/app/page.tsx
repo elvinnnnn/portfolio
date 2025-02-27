@@ -12,6 +12,7 @@ import {
   Corners,
 } from "./components";
 import { useSearchParams } from "next/navigation";
+import { AIChatBox } from "./components";
 
 export default function Home() {
   const searchParams = useSearchParams();
@@ -44,6 +45,7 @@ export default function Home() {
       </div>
       <div className="right-half">{renderContent()}</div>
       <Footer />
+      <AIChatBox />
     </div>
   );
 }

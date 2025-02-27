@@ -7,6 +7,7 @@
 @import "./partials/about";
 @import "./partials/contact";
 @import "./partials/projects";
+@import "./partials/aichatbox";
 
 .highlight {
   text-decoration: none;
@@ -255,6 +256,10 @@
   }
   .active-project {
     aspect-ratio: 2/1;
+  }
+  .aichatbox {
+    max-width: 100%;
+    right: -15px;
   }
 }
 

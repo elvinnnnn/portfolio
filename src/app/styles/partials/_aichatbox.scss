@@ -1,0 +1,166 @@
+.aichatbox {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 50;
+  width: 100%;
+  max-width: 500px;
+  padding: 1rem;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide-up {
+  transform: translateY(0);
+}
+
+.slide-down {
+  transform: translateY(93%);
+}
+
+.hidden {
+  display: none;
+}
+
+.jiji {
+  border-radius: 100px;
+  border-style: solid;
+  opacity: 0;
+}
+
+.chat-box {
+  display: flex;
+  height: 600px;
+  flex-direction: column;
+  background-color: #222234ea;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 1rem;
+}
+
+.messages {
+  overflow-y: auto;
+  height: 100%;
+  padding: 6px;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.ai-message {
+  justify-content: start;
+}
+.ai-message-pic {
+  flex: none;
+  color: #f2e9e4;
+  padding-right: 6px;
+}
+.user-message {
+  justify-content: end;
+}
+.bubble {
+  border-width: 1px;
+  border-style: solid;
+  padding: 3px 3px;
+}
+.ai-bubble {
+  color: #f2e9e4;
+  border-width: 0px;
+}
+.user-bubble {
+  background-color: #f2e9e4;
+  border-radius: 5px;
+  color: #22223b;
+}
+
+.initial-prompt {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  text-align: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  color: #f2e9e4;
+}
+
+.list-style {
+  margin-top: 0.75rem;
+  list-style-position: inside;
+  list-style-type: disc;
+}
+
+.list-style:first-child {
+  margin-top: 0;
+}
+
+.p-style {
+  margin-top: 0.75rem;
+}
+
+.p-style:first-child {
+  margin-top: 0;
+}
+
+.chat-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f2e9e4;
+  width: 2.5rem;
+  flex: none;
+}
+
+.chat-submit:disabled {
+  opacity: 0.5;
+}
+
+.chat-input {
+  flex-grow: 1;
+  border: 1px solid;
+  border-radius: 0.25rem;
+  padding: 0.5rem 0.75rem;
+  background-color: #f2e9e4;
+}
+
+.chat-clear {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f2e9e4;
+  width: 2.5rem;
+  flex: none;
+}
+
+.chat-form {
+  margin: 0.75rem;
+  display: flex;
+  gap: 0.25rem;
+}
+
+.chat-toggle-button {
+  color: #f2e9e4;
+}
+
+.ai-chat-button-icon {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  flex: none;
+  color: #f2e9e4;
+  width: 50px;
+  height: 50px;
+  padding: 1rem;
+}
+
+.ai-chat-button-icon:hover {
+  transform: scale(1.1);
+  fill: #e64833;
+}
+
+.ai-chat-button-icon:active {
+  transform: scale(1);
+}

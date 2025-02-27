@@ -3,13 +3,13 @@ import React, { useEffect, useState } from "react";
 
 export default function Experience() {
   const [index, setIndex] = useState<number>(0);
-  const [isCramped, setIsCramped] = useState<boolean>(window.innerWidth <= 670);
+  const [isCramped, setIsCramped] = useState<boolean>(false);
 
   useEffect(() => {
     const handleResize = () => {
       setIsCramped(window.innerWidth <= 670);
     };
-
+    handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
