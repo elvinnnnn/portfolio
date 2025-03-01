@@ -15,7 +15,7 @@ export default function ExperiencesContent({ index }: { index: number }) {
             significant increase in response accuracy.
           </li>
         </ul>
-        Support Engineer at FCCCI (Non-Profit)
+        Technical Support at FCCCI + TSA (Non-Profit)
         <ul>
           <li>
             Diagnosed and resolved 150+ hardware and software issues for
